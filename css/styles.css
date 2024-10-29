@@ -23,10 +23,10 @@ body {
 
 .grid-item {
     display: flex;
-    border: 1px solid black;
+    border: 1px solid grey;
 }
 
-.grid-btn {
+.grid-size-btn {
     height: auto;
     width: auto;
     padding: 15px;
