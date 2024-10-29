@@ -1,6 +1,7 @@
 const gridWidth = 810;
 const gridContainer = document.querySelector(".grid-container");
-const gridSizeBtn = document.querySelector(".grid-size-btn")
+const gridSizeBtn = document.querySelector(".grid-size-btn");
+const clearBtn = document.querySelector(".clear-btn");
 
 const createGridItem = function() {
     const newGridItem = document.createElement("div");
@@ -25,12 +26,23 @@ const deleteGrid = function() {
     });
 };
 
+const clearGrid = function() {
+    const gridItems = document.querySelectorAll(".grid-item");
+    gridItems.forEach((item) => {
+        item.style.backgroundColor = "white";
+    });
+};
+
 gridSizeBtn.addEventListener("click", () => {
-    gridRows = prompt("Enter size");
+    gridRows = prompt("Enter size between 16 - 100 ");
     if (gridRows < 16 || gridRows > 100) {
         alert("Invalid Input. Choose between 16 & 100.");
     } else {
         deleteGrid();
         createGrid(gridRows);
     }
+});
+
+clearBtn.addEventListener("click", () => {
+    clearGrid()
 });
