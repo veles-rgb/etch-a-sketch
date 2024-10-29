@@ -5,11 +5,18 @@
 }
 
 body { 
+    font-family: 'Courier New', Courier, monospace;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
+}
+
+.title {
+    color: red;
+    font-size: 32px;
+    font-weight: 900;
 }
 
 .grid-container {
@@ -23,17 +30,15 @@ body {
 
 .grid-item {
     display: flex;
-    border: 1px solid grey;
+    border: 1px solid lightgray;
 }
 
-.grid-size-btn {
-    height: auto;
-    width: auto;
+.btn {
+    margin-top: 15px;
     padding: 15px;
-    color: white;
-    background-color: red;
-    border: 2px solid white;
     font-size: 24px;
     font-weight: 900;
-    margin-bottom: 10px;
+    color: red;
+    background-color: white;
+    border: 2px solid red;
 }
