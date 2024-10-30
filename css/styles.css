@@ -5,17 +5,49 @@
 }
 
 body { 
-    font-family: 'Courier New', Courier, monospace;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Pixelify Sans", sans-serif;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.middle-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    width: 50%;
+}
+
+.left-section,
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+}
+
+.left-section {
+    align-items: flex-end;
+}
+
+.right-section {
+    align-items: flex-start;
+}
+
+.left-buttons,
+.right-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .title {
     color: red;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 900;
 }
 
@@ -34,11 +66,17 @@ body {
 }
 
 .btn {
+    font-family: "Pixelify Sans", sans-serif;
+    width: 175px;
     margin-top: 15px;
     padding: 15px;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 900;
     color: red;
     background-color: white;
     border: 2px solid red;
+}
+
+.middle-buttons .btn {
+    margin: 15px 5px;
 }
