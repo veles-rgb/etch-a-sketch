@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etch-a-Sketch</title>
+    <title>Pixel Draw</title>
     <link rel="stylesheet" href="./css/styles.css">
     <script src="./js/scripts.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+    </style>
 </head>
+
 <body>
-    <div class="title"><h1>Etch-a-Sketch</h1></div>
-    <div class="grid-container">
-        <!-- Created with JS -->
+    <div class="left-section">
+        <div class="left-buttons">
+            <h3>Color Options</h3>
+            <button class="left-btns btn">Random Colors</button>
+            <button class="left-btns btn">Progressive</button>
+        </div>
     </div>
-    <div class="buttons">
-        <button class="grid-size-btn btn">Set Grid Size</button>
-        <button class="clear-btn btn">Clear Grid</button>
+    <div class="middle-section">
+        <div class="title">
+            <h1>Pixel Draw</h1>
+        </div>
+        <div class="grid-container">
+            <!-- Created with JS -->
+        </div>
+        <div class="middle-buttons">
+            <button class="grid-size-btn btn">Set Grid Size</button>
+            <button class="clear-btn btn">Clear Grid</button>
+        </div>
+    </div>
+    <div class="right-section">
+        <div class="right-buttons">
+            <h3>Draw Modes</h3>
+            <button class="right-btns btn">Hover Draw</button>
+            <button class="right-btns btn">Click Draw</button>
+        </div>
     </div>
 </body>
+
 </html>
