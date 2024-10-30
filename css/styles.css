@@ -10,6 +10,7 @@ body {
     font-family: "Pixelify Sans", sans-serif;
     display: flex;
     flex-direction: row;
+    color: red;
     background-color: white;
 }
 
@@ -77,6 +78,17 @@ body {
     border: 2px solid red;
 }
 
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px;
+}
+
 .middle-buttons .btn {
     margin: 15px 5px;
+}
+
+.selected {
+    color: white;
+    background-color: red;
+    border: 2px solid red;
 }
