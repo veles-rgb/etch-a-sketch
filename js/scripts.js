@@ -1,7 +1,9 @@
+// Global Constants and Variables
 const gridWidth = 810;
 const gridContainer = document.querySelector(".grid-container");
 const gridSizeBtn = document.querySelector(".grid-size-btn");
 const clearBtn = document.querySelector(".clear-btn"); 
+const deleteGridBtn = document.querySelector(".delete-gird-btn")
 const randBtn = document.querySelector(".rand-btn");
 const progBtn = document.querySelector(".prog-btn");
 const hoverBtn = document.querySelector(".hover-btn");
@@ -38,7 +40,7 @@ const colorMode = function(item) {
         getProgressiveColor(item);
     } else {
         alert("Error: no color mode selected");
-    };
+    }
 };
 
 // Create each grid item with colorMode event listeners 
@@ -54,7 +56,7 @@ const createGridItem = function(gridRows) {
 const createGrid = function(gridRows) {
     for (let i = 0; i < (gridRows * gridRows); i++) {
         createGridItem(gridRows);
-    };
+    }
 };
 
 // Delete grid logic for grid resize
@@ -73,15 +75,19 @@ const clearGrid = function() {
     });
 };
 
-// Clear grid button even listener
+// Clear grid button event listener
 clearBtn.addEventListener("click", () => {
-    clearGrid()
+    clearGrid();
+});
+
+deleteGridBtn.addEventListener("click", () => {
+    deleteGrid();
 });
 
 // Random RGB color mode button event listener
 randBtn.addEventListener("click", () => {
-    randBtn.classList.add("selected")
-    progBtn.classList.remove("selected")
+    randBtn.classList.add("selected");
+    progBtn.classList.remove("selected");
     currentColorMode = "rand";
 });
 
@@ -96,7 +102,7 @@ progBtn.addEventListener("click", () => {
 hoverBtn.addEventListener("click", () => {
     hoverBtn.classList.add("selected");
     clickBtn.classList.remove("selected");
-    currentDrawMode = "mousedown";
+    currentDrawMode = "mouseenter";
 });
 
 // Click draw mode click event listener
@@ -106,9 +112,9 @@ clickBtn.addEventListener("click", () => {
     currentDrawMode = "click";
 });
 
-// Click event for grid size
+// Grid size / create grid button event listener
 gridSizeBtn.addEventListener("click", () => {
-    gridRows = prompt("Enter size between 16 - 100", 16);
+    const gridRows = prompt("Enter size between 16 - 100", 16);
     if (gridRows < 16 || gridRows > 100) {
         alert("Invalid Input. Choose between 16 & 100.");
     } else {
