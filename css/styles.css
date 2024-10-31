@@ -29,14 +29,6 @@ body {
     justify-content: center;
 }
 
-.left-section {
-    align-items: flex-end;
-}
-
-.right-section {
-    align-items: flex-start;
-}
-
 .left-buttons,
 .right-buttons {
     display: flex;

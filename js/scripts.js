@@ -58,6 +58,7 @@ const createGridItem = function(gridRows) {
     const newGridItem = document.createElement("div");
     newGridItem.classList.add("grid-item");
     newGridItem.style.width = gridWidth / gridRows + "px";
+    newGridItem.style.height = gridWidth / gridRows + "px";
     colorMode(newGridItem);
     gridContainer.appendChild(newGridItem);
 };
