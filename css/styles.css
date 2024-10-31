@@ -9,6 +9,7 @@ body {
     height: 100vh;
     font-family: "Pixelify Sans", sans-serif;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
     color: red;
     background-color: white;
@@ -19,7 +20,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
 }
 
 .left-section,
@@ -27,7 +27,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 25%;
 }
 
 .left-section {
