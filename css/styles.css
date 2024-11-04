@@ -5,17 +5,17 @@
 }
 
 body { 
-    width: 100vw;
-    height: 100vh;
-    font-family: "Pixelify Sans", sans-serif;
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: "Pixelify Sans", sans-serif;
     color: red;
     background-color: white;
 }
 
 .middle-section {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,9 +24,12 @@ body {
 
 .left-section,
 .right-section {
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 .left-buttons,
@@ -35,6 +38,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    outline: 4px solid red;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .title {
@@ -46,10 +56,10 @@ body {
 .grid-container {
     display: flex;
     flex-wrap: wrap;
-    height: 820px;
-    width: 820px;
+    height: 700px;
+    width: 700px;
     background-color: white;
-    border: solid 5px red;
+    outline: 4px solid red;
 }
 
 .grid-item {
@@ -63,7 +73,7 @@ body {
     width: 175px;
     margin-top: 15px;
     padding: 15px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 900;
     color: red;
     background-color: white;

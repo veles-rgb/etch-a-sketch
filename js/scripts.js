@@ -1,5 +1,5 @@
 // Global Constants and Variables
-const gridWidth = 810;
+const gridWidth = 700;
 const gridContainer = document.querySelector(".grid-container");
 const gridSizeBtn = document.querySelector(".grid-size-btn");
 const clearBtn = document.querySelector(".clear-btn"); 
